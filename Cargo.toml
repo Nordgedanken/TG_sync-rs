@@ -34,10 +34,11 @@ license = "GPL-3.0"
 # specified using the following parameters:
 [badges]
 # Travis CI: `repository` is required. `branch` is optional; default is `master`
-#travis-ci = { repository = "...", branch = "master" }
+travis-ci = { repository = "https://github.com/Nordgdanken/TG_sync-rs", branch = "master" }
 
 
 [dependencies]
 telebot = "0.1.1"
+slack = "0.16.0"
 futures = "0.1.7"
 tokio-core = "0.1.2"
