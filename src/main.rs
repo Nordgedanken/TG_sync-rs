@@ -46,7 +46,7 @@ fn main() {
 fn slack() {
     let args: Vec<String> = std::env::args().collect();
     let api_key = match args.len() {
-        0 | 1 => panic!("No api-key in args! Usage: cargo run --example slack_example -- <api-key>"),
+        0 | 1 => panic!("No api-key in args! Usage: cargo run -- <api-key>"),
         x => {
             args[x - 1].clone()
         }
