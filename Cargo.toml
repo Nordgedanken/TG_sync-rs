@@ -39,9 +39,9 @@ travis-ci = { repository = "https://github.com/Nordgdanken/TG_sync-rs", branch =
 
 [dependencies]
 telebot = "0.1.1"
-slack = "*"
+slack = { git = "https://github.com/MTRNord/slack-rs", branch = "openssl-fix" }
 futures = "0.1.7"
 tokio-core = "0.1.2"
 
 [replace]
-"websocket:0.17.1" = { git = "https://github.com/asayers/rust-websocket", branch = "openssl-0.9" }
+"websocket:0.17.1" = { git = "https://github.com/MTRNord/rust-websocket", branch = "openssl-0.9" }
